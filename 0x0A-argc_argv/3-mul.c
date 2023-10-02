@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 /**
  *main-print sum of 2 numbers.
  *@argc:number of commandline arguments.
