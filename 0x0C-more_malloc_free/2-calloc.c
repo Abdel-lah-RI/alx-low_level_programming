@@ -20,7 +20,6 @@ char *_memset(char *s, char b, unsigned int n)
 
 	return (s);
 }
-
 /**
  * *_calloc - a function that allocates memory for an array
  * @nmemb: the number of the elements in the array
@@ -40,7 +39,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (pter == NULL)
 		return (NULL);
 
-	_memset(ptr, 0, nmemb * size);
+	_memset(pter, 0, nmemb * size);
 
 	return (pter);
 }
