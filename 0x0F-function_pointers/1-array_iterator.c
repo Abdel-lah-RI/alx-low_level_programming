@@ -9,11 +9,9 @@
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int i;
+	int *the_end = array + size - 1;
 
-	if (array && action)
-		for (i = 0; i < size; i++)
-		{
-			action(array[i]);
-		}
+	if (array && size && action)
+		while (array <= the_end)
+			action(*array++);
 }
